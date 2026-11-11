@@ -66,7 +66,7 @@
     ctx.fillRect(0, 0, W, H);
 
     // grid
-    ctx.strokeStyle = "rgba(255,255,255,0.05)";
+    ctx.strokeStyle = "rgba(205,214,244,0.05)";
     ctx.lineWidth = 1;
     for (const f of GRID_FREQS) {
       const x = Math.round(freqToX(f, W)) + 0.5;
@@ -83,7 +83,7 @@
       ctx.stroke();
     }
     // 0 dB line
-    ctx.strokeStyle = "rgba(255,255,255,0.14)";
+    ctx.strokeStyle = "rgba(205,214,244,0.14)";
     ctx.beginPath();
     ctx.moveTo(0, Math.round(yForDb(0)) + 0.5);
     ctx.lineTo(W, Math.round(yForDb(0)) + 0.5);
@@ -113,7 +113,7 @@
     ctx.lineTo(W, yForDb(0));
     ctx.lineTo(0, yForDb(0));
     ctx.closePath();
-    ctx.fillStyle = eq.enabled ? col("--accent-glow") : "rgba(255,255,255,0.03)";
+    ctx.fillStyle = eq.enabled ? col("--accent-glow") : "rgba(205,214,244,0.03)";
     ctx.fill();
 
     // band handles
@@ -276,7 +276,7 @@
     position: fixed;
     inset: 0;
     z-index: 40;
-    background: rgba(10, 11, 13, 0.7);
+    background: rgba(17, 17, 27, 0.7);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -335,7 +335,7 @@
   }
   .closebtn:hover {
     background: var(--mute);
-    color: #fff;
+    color: #11111b;
   }
   canvas {
     display: block;

@@ -16,12 +16,12 @@
   const W = 10;
 
   let colors = {
-    trough: "#0A0B0D",
-    green: "#2BD96A",
-    amber: "#F5B800",
-    red: "#FF453A",
-    hold: "rgba(255,255,255,0.85)",
-    clip: "#FF2E43",
+    trough: "#11111B",
+    green: "#A6E3A1",
+    amber: "#F9E2AF",
+    red: "#EBA0AC",
+    hold: "rgba(205,214,244,0.85)",
+    clip: "#F38BA8",
   };
 
   function readColors() {
@@ -76,7 +76,7 @@
       ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
       ctx.fillStyle = colors.trough;
       ctx.fillRect(0, 0, W, H);
-      ctx.fillStyle = "rgba(255,255,255,0.06)";
+      ctx.fillStyle = "rgba(205,214,244,0.06)";
       for (const t of [-6, -18, -40]) ctx.fillRect(0, Math.round(yFor(t)), W, 1);
 
       for (let ch = 0; ch < 2; ch++) {
@@ -87,7 +87,7 @@
         if (segmented) {
           for (let y = H - 4; y >= barTop; y -= 4) {
             const segDb = -60 + (1 - (y + 3 - barTop) / barH) * 60;
-            ctx.fillStyle = rms >= segDb ? zoneColor(segDb) : "rgba(255,255,255,0.03)";
+            ctx.fillStyle = rms >= segDb ? zoneColor(segDb) : "rgba(205,214,244,0.03)";
             ctx.fillRect(x, y, 4, 3);
           }
         } else {
@@ -116,7 +116,7 @@
         }
       }
 
-      ctx.fillStyle = state.clip ? colors.clip : "rgba(255,255,255,0.05)";
+      ctx.fillStyle = state.clip ? colors.clip : "rgba(205,214,244,0.05)";
       ctx.fillRect(0, 0, W, CLIP_H);
     };
 

@@ -31,6 +31,6 @@
   }
   .winbtn.close:hover {
     background: var(--mute);
-    color: #fff;
+    color: #11111b;
   }
 </style>

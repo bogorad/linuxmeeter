@@ -109,7 +109,7 @@
   }
   .axis {
     position: absolute;
-    background: rgba(255, 255, 255, 0.07);
+    background: rgba(205,214,244,0.07);
   }
   .axis.h {
     left: 0;

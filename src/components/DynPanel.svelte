@@ -52,7 +52,7 @@
     ctx.fillRect(0, 0, CW, CH);
 
     // grid every 12 dB + unity diagonal
-    ctx.strokeStyle = "rgba(255,255,255,0.05)";
+    ctx.strokeStyle = "rgba(205,214,244,0.05)";
     ctx.lineWidth = 1;
     for (let db = -48; db < 0; db += 12) {
       const x = Math.round(xFor(db)) + 0.5;
@@ -64,7 +64,7 @@
       ctx.lineTo(CW, y);
       ctx.stroke();
     }
-    ctx.strokeStyle = "rgba(255,255,255,0.12)";
+    ctx.strokeStyle = "rgba(205,214,244,0.12)";
     ctx.setLineDash([3, 3]);
     ctx.beginPath();
     ctx.moveTo(xFor(DB_MIN), yFor(DB_MIN));
@@ -288,7 +288,7 @@
     position: fixed;
     inset: 0;
     z-index: 40;
-    background: rgba(10, 11, 13, 0.7);
+    background: rgba(17, 17, 27, 0.7);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -331,7 +331,7 @@
   }
   .closebtn:hover {
     background: var(--mute);
-    color: #fff;
+    color: #11111b;
   }
   .sep {
     height: 1px;

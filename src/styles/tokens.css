@@ -1,36 +1,36 @@
 /* linuxmeeter design system — single source of truth.
-   Ported verbatim from mockup/index.html (approved 2026-07-31, amber accent). */
+   Ported verbatim from mockup/index.html (approved 2026-07-31); recolored to Catppuccin Mocha (ago, 2026-11-11). */
 :root {
   /* ---- surfaces ---- */
-  --bg-0: #0A0B0D;
-  --bg-1: #121317;
-  --bg-2: #17181D;
-  --bg-3: #1E2026;
-  --bg-4: #262932;
-  --border-0: #26282F;
-  --border-1: #34373F;
-  --hl-top: rgba(255, 255, 255, 0.05);
+  --bg-0: #11111B; /* crust */
+  --bg-1: #181825; /* mantle */
+  --bg-2: #1E1E2E; /* base */
+  --bg-3: #313244; /* surface0 */
+  --bg-4: #45475A; /* surface1 */
+  --border-0: #313244; /* surface0 */
+  --border-1: #45475A; /* surface1 */
+  --hl-top: rgba(205, 214, 244, 0.05); /* text */
 
   /* ---- text ---- */
-  --text-1: #E8EAED;
-  --text-2: #9BA1AB;
-  --text-3: #5C616B;
+  --text-1: #CDD6F4; /* text */
+  --text-2: #A6ADC8; /* subtext0 */
+  --text-3: #6C7086; /* overlay0 */
 
-  /* ---- accent: amber ---- */
-  --accent:      #FFB020;
-  --accent-hi:   #FFC554;
-  --accent-lo:   #D98F0D;
-  --accent-glow: rgba(255, 176, 32, 0.14);
-  --on-accent:   #1A1002;
+  /* ---- accent: Catppuccin Mocha mauve ---- */
+  --accent:      #CBA6F7; /* mauve */
+  --accent-hi:   #F5C2E7; /* pink */
+  --accent-lo:   #B48EF0;
+  --accent-glow: rgba(203, 166, 247, 0.14);
+  --on-accent:   #11111B; /* crust */
 
   /* ---- meters & states ---- */
-  --meter-green: #2BD96A;
-  --meter-amber: #F5B800;
-  --meter-red:   #FF453A;
-  --meter-peak:  rgba(255, 255, 255, 0.85);
-  --clip:        #FF2E43;
-  --mute:        #E5484D;
-  --solo:        #FFB224;
+  --meter-green: #A6E3A1; /* green */
+  --meter-amber: #F9E2AF; /* yellow */
+  --meter-red:   #EBA0AC; /* maroon */
+  --meter-peak:  rgba(205, 214, 244, 0.85); /* text */
+  --clip:        #F38BA8; /* red */
+  --mute:        #F38BA8; /* red */
+  --solo:        #F9E2AF; /* yellow */
   --focus-ring:  var(--accent);
 
   /* ---- layout ---- */

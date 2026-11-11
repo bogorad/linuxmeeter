@@ -37,12 +37,12 @@
   }
   .msbtn.m.active {
     background: var(--mute);
-    color: #1a0506;
+    color: #11111b;
     border-color: var(--mute);
   }
   .msbtn.s.active {
     background: var(--solo);
-    color: #1a1002;
+    color: #11111b;
     border-color: var(--solo);
   }
 </style>
